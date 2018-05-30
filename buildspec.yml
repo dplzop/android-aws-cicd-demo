@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - ./gradlew deviceAndroidTest
+      - ./gradlew test --debug
       - ./gradlew assembleDebug
 artifacts:
   files:
