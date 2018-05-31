@@ -4,10 +4,11 @@ phases:
   build:
     commands:
       - ./gradlew test
+      - ./gradlew connectedAndroidTest
       - ./gradlew assembleDebug
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - app/build/outputs/apk/demo-haha-debug.apk
+    - app/build/outputs/apk/app-debug.apk
